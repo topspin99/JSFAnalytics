@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #15171c;
+  --panel: #1b1e25;
+  --text: #ededE8;
+  --muted: #8a8d96;
+  --accent-1: #e8a33d;
+  --accent-2: #3da5a8;
+  --line: #2a2d36;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.mono {
+  font-family: ui-monospace, "SF Mono", "Cascadia Code", monospace;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}
